@@ -1,0 +1,167 @@
+
+
+
+body, h1, h2, h3, h4, h5, h6, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #3BBADB;
+  border: 5px solid #3BBADB; 
+  padding: 20px;
+  height: 650px;
+}
+
+header {
+  background-color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; 
+  margin-right: 20px; 
+  margin-top: 20px; 
+}
+
+nav ul li {
+  margin: 0 10px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center; 
+}
+
+nav ul li a span {
+  margin-right: 5px; 
+}
+
+.fa-home {
+  color: #D1884F !important;
+}
+
+nav ul li a[href="#home"] {
+  color: #D1884F; 
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.text-content {
+  flex: 1; 
+  margin-left: 20px; 
+}
+
+.right-image {
+  max-width: 100%;
+  border-radius: 0 0 0 50%; 
+  overflow: hidden;
+  box-shadow: -20px 5px 0 rgba(58, 97, 214, 0.5); 
+  margin-right: 20px; 
+}
+
+.main-section {
+  text-align: left; 
+  padding: 50px;
+  color: #fff;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.button,
+.button-2 {
+  display: inline-block;
+  padding: 10px 20px; 
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #3BBADB; 
+}
+
+.button-2 {
+  color: #3BBADB;
+  background-color: #fff;
+}
+
+.section-2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 2.3px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.para-one {
+  color: #3BBADB;
+  padding-bottom: 16px;
+}
+
+.para-2 {
+  color: #000;
+  font-size: 15px;
+}
+
+.para-3,
+.para-4,
+.para-4 span {
+  color: #008AAA;
+}
+
+.para-4 span {
+  color: #D1884F;
+}
+
+.seeMore {
+  color: #3BBADB;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+      height: auto; 
+  }
+
+  nav ul {
+      justify-content: center; 
+      margin-right: 0; 
+      margin-top: 10px; 
+  }
+
+  nav ul li {
+      margin: 0 5px; 
+  }
+
+  .content {
+      flex-direction: column; 
+      text-align: center;
+  }
+
+  .right-image {
+      margin-top: 20px; 
+  }
+
+  .text-content {
+      margin-left: 0; 
+  }
+
+  .button,
+  .button-2 {
+      padding: 10px 15px; 
+      margin: 0 5px;
+  }
+
+  .main-section {
+      padding: 20px; 
+  }
+}
